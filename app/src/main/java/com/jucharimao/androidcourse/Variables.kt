@@ -93,4 +93,7 @@ fun main(){
 
     val convetirVariable: String = age1.toString()
     println(convetirVariable)
+
+    val convertirVariable2: Int = stringExample3.toInt()
+    println(convertirVariable2)
 }
