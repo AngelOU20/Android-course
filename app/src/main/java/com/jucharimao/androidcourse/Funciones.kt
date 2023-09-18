@@ -2,8 +2,15 @@ package com.jucharimao.androidcourse
 
 fun main() {
     variablesNumericas()
-//    sumaVariables(10, 20)
-    println(sumaVariables(15, 20))
+
+    showMyAge(23)
+
+    add(29, 30)
+
+    var myMultiplication: Float = multiplication(10.2f, 20.1f)
+    println(myMultiplication)
+
+    println(subtract(56, 42))
 }
 
 /**
@@ -27,10 +34,34 @@ fun variablesNumericas() {
     println(doubleExample)
 }
 
+fun variablesAlfanumericas() {
+    // Char
+    val charExample: Char = 'u'
+    println(charExample)
+
+    // String
+    val stringExample: String = "curso de Android"
+    println(stringExample)
+}
+
+/**
+ * Función con párametros de entrada
+ */
+fun showMyAge(currentAge: Int) {
+    println("Tengo $currentAge años")
+}
+
+fun add(firstNumber: Int, secondNumber: Int) {
+    println(firstNumber + secondNumber)
+}
+
 /**
  * Función con parámetros y con valor de retorno
  */
-fun sumaVariables(a:Int, b:Int): Int {
-    var suma:Int= a + b
-    return suma
+
+fun multiplication(a: Float, b: Float): Float {
+    var multiplicacion: Float = a * b
+    return multiplicacion
 }
+
+fun subtract(firstNumber: Int, secondNumber: Int) = firstNumber - secondNumber
