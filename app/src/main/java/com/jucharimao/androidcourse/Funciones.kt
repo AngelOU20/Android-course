@@ -11,6 +11,8 @@ fun main() {
     println(myMultiplication)
 
     println(subtract(56, 42))
+
+    println(sum(5, 10))
 }
 
 /**
@@ -65,3 +67,10 @@ fun multiplication(a: Float, b: Float): Float {
 }
 
 fun subtract(firstNumber: Int, secondNumber: Int) = firstNumber - secondNumber
+
+/**
+ * Función lambda o arrow function
+ */
+
+val sum = {a: Int, b: Int -> a + b}
+
